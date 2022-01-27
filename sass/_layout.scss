@@ -5,6 +5,13 @@
   box-shadow: var(--shadow-dark);
 
   min-height: 50rem;
+
+  // ---------------------MEDIA QUERIES----------------//
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .header {
@@ -16,10 +23,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  // // ---------------------MEDIA QUERIES----------------//
+  // @media only screen and (max-width: $bp-smallest) {
+  //   flex-wrap: wrap;
+  // }
 }
 
 .content {
   display: flex;
+
+  // ---------------------MEDIA QUERIES----------------//
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
 }
 // Psuedo element
 
@@ -40,6 +57,15 @@
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
+
+  // ---------------------MEDIA QUERIES----------------//
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem;
+  }
+  // ---------------------MEDIA QUERIES----------------//
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
 }
 .description {
   background-color: #fff;
@@ -47,6 +73,16 @@
   padding: 2.25rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
+
+  // ---------------------MEDIA QUERIES----------------//
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+  // ---------------------MEDIA QUERIES----------------//
+  @media only screen and (max-width: $bp-small) {
+    margin-right: 0;
+  }
 }
 .user-reviews {
   padding: 2.25rem;
